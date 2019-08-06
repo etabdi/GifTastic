@@ -1,21 +1,21 @@
 
        $(document).ready(function(){ 
-                 var years =["1920","2018","2017","2016"]
-       $("#add-year").on("click",function(event){
+                 var cars =["Ford ","Audi R8","Ferrari ","Benz","Porsche","Chevrolet "]
+       $("#add-car").on("click",function(event){
             event.preventDefault();
-            var year =$("#year-input").val().trim();
-            years.push(year);
+            var car =$("#car-input").val().trim();
+            cars.push(car);
             renderButtons()
         });
    
          function renderButtons(){
          $("#buttons-view").empty();
-   for (var i=0;i<years.length;i++){
+   for (var i=0;i<cars.length;i++){
          var btn=$("<button>");
-         btn.addClass("year");
-         btn.attr("data-name",years[i])
-         btn.text(years[i]);
-         $("#buttons-view").prepend(btn)
+         btn.addClass("car");
+         btn.attr("data-name",cars[i])
+         btn.text(cars[i]);
+         $("#buttons-view").append(btn)
              console.log(btn)
          }
          }    
@@ -28,24 +28,24 @@
         }).then(function(response) {
             console.log(queryURL)
           var results =response.data;          
-     for (var i=0;i<years.length;i++){
-          var animalDiv=$("<div>");
-          var animalImage=$("<img>");
-          animalImage.addClass("animalImage")
-          animalImage.attr("src",results[i].images.fixed_height.url)
-          animalImage.attr("data_state","still")
-          animalImage.attr("src",results[i].images.fixed_height_still.url)
-          animalDiv.append(animalImage);
-            $("#view").prepend(animalDiv);                 
+     for (var i=0;i<cars.length;i++){
+          var carDiv=$("<div>");
+          var carImage=$("<img>");
+          carImage.addClass("carImage")
+          carImage.attr("src",results[i].images.fixed_height.url)
+          carImage.attr("data_state","still")
+          carImage.attr("src",results[i].images.fixed_height.url)
+          carDiv.append(carImage);
+            $("#view").prepend(carDiv);                 
            }
 
           $("#view").on('click', function() {
             var state = $(this).attr('data-state');
             if (state == 'still') {
-                animalImage.attr("src",results[i].images.fixed_height.url)
+                carImage.attr("src",results[i].images.fixed_height.url)
             } else {
                
-                animalImage.attr("src",results[i].images.fixed_height_still.url)
+                carImage.attr("src",results[i].images.fixed_height_still.url)
              
                 console.log("click worked!");
             }
@@ -56,7 +56,7 @@
             
            
             renderButtons();
-            $(document).on("click",".year",buttonInformation)
+            $(document).on("click",".car",buttonInformation)
             })
                 
         
