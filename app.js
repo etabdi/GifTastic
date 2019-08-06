@@ -1,7 +1,12 @@
 
        $(document).ready(function(){ 
+<<<<<<< HEAD
                  var cars =["Ford ","Audi R8","Ferrari ","Benz","Porsche","Chevrolet "]
        $("#add-car").on("click",function(event){
+=======
+                 var years =["2050","1902","2019","1800"]
+       $("#add-year").on("click",function(event){
+>>>>>>> d6d9689096ea3519e1469703b2f0e98b4efaf74f
             event.preventDefault();
             var car =$("#car-input").val().trim();
             cars.push(car);
