@@ -1,6 +1,6 @@
 
        $(document).ready(function(){ 
-                 var years =["1920","2018","2017","2016"]
+                 var years =["2050","1902","2019","1800"]
        $("#add-year").on("click",function(event){
             event.preventDefault();
             var year =$("#year-input").val().trim();
