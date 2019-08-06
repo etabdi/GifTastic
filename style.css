@@ -1,0 +1,86 @@
+
+body {
+ 
+  font-family: 'Source Serif Pro', serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Arbutus Slab', serif;
+  background-color:rgb(233, 232, 214); 
+  font-size: 18px;
+
+}
+.animalImage{
+  float:left;
+  width:250px; 
+  height:250px;
+  margin:10px;
+  background-color: #777;
+  animation-play-state: paused;
+    }
+
+#logo {
+
+    color:#fff;
+    text-align:center;
+    font-family: 'Pacifico', cursive;
+    padding-top:6px;
+  font-size: 30px;
+  
+}
+
+
+html {
+  
+  position: relative;
+  min-height: 100%;
+}
+
+.year,#add-year{
+	border-radius: 5px;
+  border: 2px solid rgb(26, 25, 24);
+  margin:2px;
+  background-color: orange;
+}
+.clear {
+	clear:both;
+}
+
+
+#images {
+
+  padding-top: 15px;
+  text-align: center;
+  background-color: black;
+}
+
+.footer {
+
+  position: fixed;
+  bottom: 0px ;
+  width: 100%;
+  height: 60px;
+  background-color: #666;
+
+  color:white;
+
+}
+
+.text-muted-footer {
+  margin-top: 20px;
+  color: #fff;
+}
+
+.two-toned-footer-color {
+
+  height: 8px;
+  padding-top: 3px;
+  background-color: #4aaaa5;
+  
+}
+
+
+@media only screen and (max-width: 767px) {
+  .navbar-header {
+    background-color: #4aaaa5;
+  }
+}
