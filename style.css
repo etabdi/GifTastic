@@ -1,10 +1,9 @@
 
 body {
  
-  font-family: 'Source Serif Pro', serif;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Nunito Sans', sans-serif;
-  font-family: 'Arbutus Slab', serif;
+  font-family: 'Alfa Slab One', cursive;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Ultra', serif;
   background-color:rgb(233, 232, 214); 
   font-size: 18px;
 
@@ -22,11 +21,9 @@ body {
 
     color:#fff;
     text-align:center;
-    font-family: 'Lacquer', sans-serif;
-    font-family: 'Saira Stencil One', cursive;
     padding-top:6px;
-  font-size: 30px;
-  
+    font-size: 38px;
+    font-family: 'Bevan', cursive;
 }
 
 
