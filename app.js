@@ -4,6 +4,7 @@
       $(document).ready(function(){ 
           //creating cars array
                          var cars =["Audi R8"," Corvette","Ferrari","Benz","Porsche","Chevrolet"]
+                         //sets up a click listener on add-car button
             $("#add-car").on("click",function(event){
                         event.preventDefault();
                         var car =$("#car-input").val().trim();
