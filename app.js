@@ -67,7 +67,7 @@
                     else {
                             
                                 $(this).attr("src",$(this).attr("data-still"));
-                                $(this).att("data-state","still");
+                                $(this).attr("data-state","still");
                                                        
                      }
                             console.log("click worked!");
