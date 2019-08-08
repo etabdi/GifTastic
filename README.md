@@ -10,10 +10,11 @@ Enter a year into the search box. As you enter terms into the search box, button
 
 
 Built With
+
 HTML
-CSS
-JavaScript
-jQuery 
-giphy API
+CSS,
+JavaScript,
+jQuery ,
+giphy API,
 
 my portfolio link https://etabdi.github.io/Bootstrap-Portfolio/
