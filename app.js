@@ -11,7 +11,7 @@
                         var car =$("#car-input").val().trim();
                         cars.push(car);
                         renderButtons()
-                        };
+                        }
                     );
             //add cars buttons
              function renderButtons(){
