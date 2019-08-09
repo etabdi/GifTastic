@@ -18,3 +18,4 @@ jQuery ,
 giphy API,
 
 my portfolio link https://etabdi.github.io/Bootstrap-Portfolio/
+ https://etabdi.github.io/GifTastic/
