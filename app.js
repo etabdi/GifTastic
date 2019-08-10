@@ -4,6 +4,8 @@
       $(document).ready(function(){ 
           //creating cars array
                          var cars =["Audi R8"," Corvette","Ferrari","Benz","Porsche","Chevrolet"]
+                         
+                         //sets up a click listener on add-car to cars array
             $("#add-car").on("click",function(event){
                         event.preventDefault();
                         var car =$("#car-input").val().trim();
@@ -11,7 +13,7 @@
                         renderButtons()
                         }
                     );
-        
+            //add cars buttons
              function renderButtons(){
                     $("#buttons-view").empty();
                         for (var i=0;i<cars.length;i++){
@@ -33,8 +35,7 @@
                         method: "GET"
                     }
                 ).then(function(response) {
-                        console.log(queryURL)
-
+                       
                     var results =response.data;          
                         for (var i=0;i<cars.length;i++){
                                 var carDiv=$("<div>");
@@ -51,7 +52,6 @@
               });
         } ;                       
                             renderButtons();
-
 
                $(document).on("click",".car",buttonInformation)
 

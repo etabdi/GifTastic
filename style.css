@@ -14,6 +14,10 @@ font-family: 'Ultra', serif;
   height:250px;
   margin:10px;
   background-color: #777;
+<<<<<<< HEAD
+=======
+  animation-play-state: paused;
+>>>>>>> d536380bec079cc4873383634bd053a66300fc92
   cursor: pointer;
     }
 
