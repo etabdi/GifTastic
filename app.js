@@ -19,6 +19,7 @@
                             btn.addClass("car");
                                 btn.attr("data-name",cars[i])
                                  btn.text(cars[i]);
+                                 
                                     $("#buttons-view").append(btn)
                         console.log(btn)
                     }
@@ -45,28 +46,29 @@
                                 carImage.attr("data-animate",results[i].images.fixed_height.url)
                                 carDiv.append(carImage);
                         $("#view").prepend(carDiv);                 
-                    }
+                    };
                     
               });
-        }                        
+        } ;                       
                             renderButtons();
 
 
                $(document).on("click",".car",buttonInformation)
 
                 $("#view").on('click',(".carImage") ,function() {
-                        
-                            var state = $(this).attr('data-state');
-                            if (state == 'still') {
+                          event.preventDefault();
+                             document.body.style.cursor="help";
+                                  var state = $(this).attr('data-state');
+                 if (state == 'still') {
                             $(this).attr("src",$(this).attr("data-animate"));
-                           $(this).attr("data-state","animate");
+                               $(this).attr("data-state","animate");
 
                             } 
                             
                     else {
                             
                                 $(this).attr("src",$(this).attr("data-still"));
-                                $(this).att("data-state","still");
+                                $(this).attr("data-state","still");
                                                        
                      }
                             console.log("click worked!");

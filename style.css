@@ -14,7 +14,7 @@ font-family: 'Ultra', serif;
   height:250px;
   margin:10px;
   background-color: #777;
-  animation-play-state: paused;
+  cursor: pointer;
     }
 
 #logo {
