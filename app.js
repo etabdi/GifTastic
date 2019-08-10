@@ -11,7 +11,7 @@
                         renderButtons()
                         }
                     );
-            //add buttons for car array
+        
              function renderButtons(){
                     $("#buttons-view").empty();
                         for (var i=0;i<cars.length;i++){
@@ -24,7 +24,7 @@
                         console.log(btn)
                     }
              }   
-             //adding buttons for car name entered 
+            
             function buttonInformation(){
                         var name = $(this).attr("data-name");
                         var queryURL = "https://api.giphy.com/v1/gifs/search?q="+name+"&api_key=3uVRFQRuRUmIUrn0Hus64PFffbVunbCw";
