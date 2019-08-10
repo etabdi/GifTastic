@@ -38,7 +38,7 @@
                     var results =response.data;          
                         for (var i=0;i<cars.length;i++){
                                 var carDiv=$("<div>");
-                                var carImage=$("<img>");
+                                var carImage=$("<div>");
                                 carImage.addClass("carImage")
                                 carImage.attr("src",results[i].images.fixed_height_still.url)
                                 carImage.attr("data-state","still")
